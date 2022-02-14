@@ -65,13 +65,10 @@ app.get('/restaurants', (req, res) => {
 
 
 // filters
-<<<<<<< HEAD
-app.get('/filter/:mealId', (req, res) => {
-    let sort = { cost:1}
-=======
+
+
 app.get('/filter/:mealId', (req, res)=>{
     let sort = { cost: 1 }
->>>>>>> f0fd2d481e3cf378939d335a5b7dcd810d12d961
     let mealId = Number(req.params.mealId)
     let skip = 0;
     let limit = 100000000000000;
@@ -139,7 +136,7 @@ app.get('/menu/:id',(req,res)=>{
 })
 
 
-// menu on basis of user selection >> todo
+// menu on basis of user selection 
 
 // get order
 app.get('/orders',(req,res)=>{
