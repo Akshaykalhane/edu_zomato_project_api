@@ -19,7 +19,7 @@ restaurants with respect to quicksearch
 
 //filter
 cuisine filter
-unfinished
+>https://edu-zomato-project-api.herokuapp.com/filter/4?cuisine=1
 
 //cost filter
 > https://edu-zomato-project-api.herokuapp.com/filter/2?lcost=200&hcost=1000
