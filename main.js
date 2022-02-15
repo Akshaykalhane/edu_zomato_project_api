@@ -66,7 +66,6 @@ app.get('/restaurants', (req, res) => {
 
 // filters
 
-
 app.get('/filter/:mealId', (req, res)=>{
     let sort = { cost: 1 }
     let mealId = Number(req.params.mealId)
@@ -92,7 +91,7 @@ app.get('/filter/:mealId', (req, res)=>{
     }
     else if (cuisineId) {
         query = {
-            "cusines.cuisine_id": cuisineId,
+            "cuisines.cuisine_id": cuisineId,
             "mealTypes.mealtype_id": mealId
         }
     }
@@ -136,7 +135,7 @@ app.get('/menu/:id',(req,res)=>{
 })
 
 
-// menu on basis of user selection 
+// menu on basis of user selection >> todo
 
 // get order
 app.get('/orders',(req,res)=>{
