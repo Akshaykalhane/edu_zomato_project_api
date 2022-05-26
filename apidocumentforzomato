@@ -48,7 +48,7 @@ sort high to low in same quicksearch
 
 //page 4
  //menu items on user selection
-> http://zomatoajulypi.herokuapp.com/menuItem
+> https://edu-zomato-project-api.herokuapp.com/menuItem
 > body [1,4,5]
 
 //api to place order
@@ -63,7 +63,7 @@ sort high to low in same quicksearch
 > https://edu-zomato-project-api.herokuapp.com/orders?email=akshay@gmail.com
 
 //delete order
-> https://edu-zomato-project-api.herokuapp.com/placeOrder
+> https://edu-zomato-project-api.herokuapp.com/deleteOrder
 
 //update order 
 > https://edu-zomato-project-api.herokuapp.com/updateOrder/620a314ec710d8289e371d7b?status=Success
