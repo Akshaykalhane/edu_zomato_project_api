@@ -178,10 +178,10 @@ app.delete('/deleteOrder',(req,res)=>{
 // updatae order
 
 app.put('/updateOrder/:id',(req,res)=>{
-    let oId=mongo.ObjectId(req.params.id)
-    let status=req.query.status?req.query.status:'Pending'
+    let oId=Number(req.params.id)
+    let status=req.body.status?req.body.status:'Pending'
     db.collection('orders').updateOne(
-        {_id:oId},
+        {id:oId},
         {$set:{
             "status":status,
             "bank_name":req.body.bank_name,
